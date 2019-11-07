@@ -1,0 +1,62 @@
+{
+  "name": "rnNavWebAppExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "nativeAndroid": "react-native run-android",
+    "nativeIos": "react-native run-ios",
+    "nativeStart": "react-native start",
+    "nativeTest": "jest",
+    "nativeLint": "eslint .",
+    "nativeLintFix": "eslint --fix .",
+    "webStart": "EXTEND_ESLINT=true react-app-rewired start",
+    "webBuild": "EXTEND_ESLINT=true react-app-rewired build",
+    "webTest": "EXTEND_ESLINT=true react-app-rewired test",
+    "webEject": "react-scripts eject",
+    "postinstall": "jetifier -r"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^3.6.2",
+    "@react-navigation/web": "^1.0.0-alpha.9",
+    "react": "16.9.0",
+    "react-dom": "^16.11.0",
+    "react-native": "^0.61.4",
+    "react-native-gesture-handler": "^1.5.0",
+    "react-native-reanimated": "^1.4.0",
+    "react-native-screens": "^1.0.0-alpha.23",
+    "react-native-web": "^0.11.7",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/runtime": "^7.7.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "jetifier": "^1.6.4",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react-app-rewired": "^2.1.4",
+    "react-test-renderer": "16.9.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
